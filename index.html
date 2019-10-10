@@ -152,6 +152,187 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-MySQL-数据库" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/10/MySQL-数据库/">MySQL 数据库</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/10/MySQL-数据库/" class="archive-article-date">
+  	<time datetime="2019-10-10T04:13:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h6 id="感谢您访问我的课下笔记"><a href="#感谢您访问我的课下笔记" class="headerlink" title="感谢您访问我的课下笔记"></a>感谢您访问我的课下笔记</h6><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h4 id="认识数据库"><a href="#认识数据库" class="headerlink" title="认识数据库"></a>认识数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Access(Excel),文本	2万以内</span><br><span class="line">MySQL	SQLServer	 2亿以内</span><br><span class="line">Oracle				 2兆</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">本机地址</span><br><span class="line">localhost或127.0.0.1</span><br></pre></td></tr></table></figure>
+
+<h4 id="MySQL-命令列介面基本操作"><a href="#MySQL-命令列介面基本操作" class="headerlink" title="MySQL 命令列介面基本操作"></a>MySQL 命令列介面基本操作</h4><h6 id="lt-1-gt-MySQL-创建数据库"><a href="#lt-1-gt-MySQL-创建数据库" class="headerlink" title="&lt;1&gt;    MySQL 创建数据库"></a>&lt;1&gt;    MySQL 创建数据库</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Create database 数据库名;	（例如：Create database demo;）</span><br></pre></td></tr></table></figure>
+
+<h6 id="lt-2-gt-删除数据库"><a href="#lt-2-gt-删除数据库" class="headerlink" title="&lt;2&gt;    删除数据库"></a>&lt;2&gt;    删除数据库</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop database 数据库名;	（例如：drop database demo;）</span><br></pre></td></tr></table></figure>
+
+<h6 id="lt-3-gt-进入数据库"><a href="#lt-3-gt-进入数据库" class="headerlink" title="&lt;3&gt;    进入数据库"></a>&lt;3&gt;    进入数据库</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use 数据库名;	（例如：use demo;）</span><br></pre></td></tr></table></figure>
+
+<h6 id="lt-4-gt-创建数据表"><a href="#lt-4-gt-创建数据表" class="headerlink" title="&lt;4&gt;    创建数据表"></a>&lt;4&gt;    创建数据表</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Create talbe 表名(字段1 类型(长度),字段2 类型(长度),	......);</span><br><span class="line">例如：</span><br><span class="line">Create talbe stuinfo(stuno char(12),stuname varchar(255),age int,score float);</span><br></pre></td></tr></table></figure>
+
+<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th align="right">取值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Binary</td>
+<td align="right">0,1</td>
+</tr>
+<tr>
+<td>Int</td>
+<td align="right">6万</td>
+</tr>
+<tr>
+<td>Bigint</td>
+<td align="right">4亿</td>
+</tr>
+<tr>
+<td>char</td>
+<td align="right">定长字符串，最大长度255</td>
+</tr>
+<tr>
+<td>varchar</td>
+<td align="right">变长字符串，最大长度255</td>
+</tr>
+<tr>
+<td>test</td>
+<td align="right">64k</td>
+</tr>
+<tr>
+<td>longtext</td>
+<td align="right">4GB</td>
+</tr>
+<tr>
+<td>float</td>
+<td align="right">6万</td>
+</tr>
+<tr>
+<td>double</td>
+<td align="right">4亿</td>
+</tr>
+</tbody></table>
+<p>char 效率高    varchar 省空间</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/10/MySQL-数据库/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-post-title-with-whitespace" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/10/post-title-with-whitespace/">post title with whitespace</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/10/post-title-with-whitespace/" class="archive-article-date">
+  	<time datetime="2019-10-10T02:34:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/10/post-title-with-whitespace/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
