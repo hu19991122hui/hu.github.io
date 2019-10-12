@@ -152,6 +152,279 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Java-Oop知识点总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/12/Java-Oop知识点总结/">Java_Oop知识点总结</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/12/Java-Oop知识点总结/" class="archive-article-date">
+  	<time datetime="2019-10-12T01:42:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <br>
+
+<hr>
+<h1 id="Less-is-More"><a href="#Less-is-More" class="headerlink" title="Less is More"></a>Less is More</h1><br>
+
+<hr>
+<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h3 id="1-MVC架构设计模式"><a href="#1-MVC架构设计模式" class="headerlink" title="1.MVC架构设计模式"></a>1.MVC架构设计模式</h3><p>M<sub>数据模型层</sub></p>
+<p>V<sub>视图层</sub></p>
+<p>C<sub>控制器层</sub></p>
+<hr>
+<h2 id="第二章-类和对象"><a href="#第二章-类和对象" class="headerlink" title="第二章 类和对象"></a>第二章 类和对象</h2><h3 id="1-面向对象概念："><a href="#1-面向对象概念：" class="headerlink" title="1. 面向对象概念："></a>1. 面向对象概念：</h3><h3 id="2-类的创建"><a href="#2-类的创建" class="headerlink" title="2. 类的创建"></a>2. 类的创建</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">语法：<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 类名</span>&#123;&#125;</span><br><span class="line">File---&gt;<span class="keyword">new</span>---&gt;<span class="class"><span class="keyword">class</span>---&gt;类名</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="3-创建对象"><a href="#3-创建对象" class="headerlink" title="3.创建对象"></a>3.创建对象</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">类名 对象名=<span class="keyword">new</span> 类名();</span><br><span class="line">对象名.方法名(); 对象名.属性</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-构造方法："><a href="#4-构造方法：" class="headerlink" title="4.构造方法："></a>4.构造方法：</h3><h4 id="方法名和类名相同-没有返回值"><a href="#方法名和类名相同-没有返回值" class="headerlink" title="方法名和类名相同,没有返回值"></a>方法名和类名相同,没有返回值</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 类名</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> 类名()&#123;&#125;<span class="comment">//主要的做用是初始化操作</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-构造方法重载"><a href="#5-构造方法重载" class="headerlink" title="5.构造方法重载"></a>5.构造方法重载</h3><h5 id="在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法"><a href="#在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法" class="headerlink" title="在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法"></a>在同一个类中，方法名相同，参数个数，顺序，类型不相同的构造方法</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 类名</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> 类名()&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> 类名(String name,<span class="keyword">int</span> age)&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-构造方法的执行"><a href="#6-构造方法的执行" class="headerlink" title="6.构造方法的执行"></a>6.构造方法的执行</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> 类名();---&gt;执行构造方法</span><br><span class="line"><span class="keyword">super</span>();---&gt;执行了父类的构造方法</span><br></pre></td></tr></table></figure>
+
+<pre><code>###     7.static静态修饰符</code></pre><h5 id="静态修饰符可以修饰属性，方法，代码块"><a href="#静态修饰符可以修饰属性，方法，代码块" class="headerlink" title="静态修饰符可以修饰属性，方法，代码块"></a>静态修饰符可以修饰属性，方法，代码块</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">类名.属性</span><br><span class="line">类名.方法名</span><br></pre></td></tr></table></figure>
+
+<h3 id="8-java内存"><a href="#8-java内存" class="headerlink" title="8.java内存"></a>8.java内存</h3><h3 id="（栈和堆，static，方法区，GC（垃圾回收机制））"><a href="#（栈和堆，static，方法区，GC（垃圾回收机制））" class="headerlink" title="（栈和堆，static，方法区，GC（垃圾回收机制））"></a>（栈和堆，static，方法区，GC（垃圾回收机制））</h3><hr>
+<h2 id="第三章-面向对象三大特征—封装"><a href="#第三章-面向对象三大特征—封装" class="headerlink" title="第三章 面向对象三大特征—封装"></a>第三章 面向对象三大特征—封装</h2><ul>
+<li><p>封装的概念</p>
+</li>
+<li><p>封装的步骤</p>
+<ul>
+<li>把属性私有化（private）</li>
+<li>对这些属性设置get和set方法</li>
+<li>调用处理这些方法</li>
+</ul>
+</li>
+<li><p>封装的作用：避免一些用一些不合乎常理的操作</p>
+</li>
+<li><p>修饰符</p>
+<ul>
+<li><p><strong>public—&gt;公共的：</strong>在一个项目中都可以访问，权限最高</p>
+</li>
+<li><p><strong>private—&gt;私有的：</strong>只能在本类中进行访问，权限最低</p>
+</li>
+<li><p><strong>protected—&gt;安全的，受保护的：</strong>同一个包能进行访问，继承中之类可以访问父类</p>
+</li>
+<li><p><strong>default—&gt;默认的：</strong>同一个包能访问</p>
+<table>
+<thead>
+<tr>
+<th align="center">修饰符</th>
+<th align="center">同一个类</th>
+<th align="center">同一个包</th>
+<th align="center">子类</th>
+<th>所有类</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">private(私有的)</td>
+<td align="center">*</td>
+<td align="center"></td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">default(常规)</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center"></td>
+<td></td>
+</tr>
+<tr>
+<td align="center">protected(受保护的)</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td></td>
+</tr>
+<tr>
+<td align="center">public(公共的)</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td align="center">*</td>
+<td>*</td>
+</tr>
+</tbody></table>
+<h6 id="从小到大优先级"><a href="#从小到大优先级" class="headerlink" title="从小到大优先级:"></a><code>从小到大优先级:</code></h6><p><code>private &lt; default &lt; protected &lt; public</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="第四章-面向对象三大特征—继承"><a href="#第四章-面向对象三大特征—继承" class="headerlink" title="第四章 面向对象三大特征—继承"></a>第四章 面向对象三大特征—继承</h2><ol>
+<li>继承的概念：<code>父亲儿子，电影《西虹市首富》</code></li>
+</ol>
+<ol start="2">
+<li><p>.继承的关键字：<code>extends</code></p>
+</li>
+<li><p>继承的语法：<code>public class 类名  extends 父类{}</code></p>
+</li>
+<li><p>使用，在之类中：</p>
+</li>
+</ol>
+   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">可以直接调用父类的非私有属性和方法</span><br><span class="line">可以用super.方法</span><br><span class="line">super.属性</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li><p>父类构造方法调用：super();</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">调用父类的构造方法必须在之类中调用</span><br><span class="line">必须实在之类构造方法的第一行代码</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="6">
+<li><p>重写@Override</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">必须继承</span><br><span class="line">方法名一致，参数个数，顺序，类型全部一致</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="第五章-面向对象（多态）"><a href="#第五章-面向对象（多态）" class="headerlink" title="第五章 面向对象（多态）"></a>第五章 面向对象（多态）</h2><ul>
+<li><p>多态的概念</p>
+</li>
+<li><p>多态的必要条件</p>
+<ul>
+<li>继承</li>
+<li>重写</li>
+<li>父类引用指向子类对象（向上转型）</li>
+</ul>
+</li>
+<li><p>多态的使用</p>
+<ul>
+<li><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Father</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">cooking</span><span class="params">()</span></span>&#123;</span><br><span class="line">   				System.out.println(<span class="string">"米饭"</span>);</span><br><span class="line">   			&#125;</span><br><span class="line">   		&#125;</span><br><span class="line">    	<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Son</span> <span class="keyword">extends</span> <span class="title">Father</span></span>&#123;</span><br><span class="line">   			<span class="meta">@Override</span></span><br><span class="line">   			<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">cooking</span><span class="params">()</span></span>&#123;</span><br><span class="line">   				System.out.println(<span class="string">"熬粥"</span>);</span><br><span class="line">   			&#125;</span><br><span class="line">   		&#125;</span><br><span class="line">   		<span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">  			<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">  				Father son=<span class="keyword">new</span> Son();</span><br><span class="line">  				son.cooking();</span><br><span class="line">  			&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>向下转型</p>
+<ul>
+<li><code>Son son=(Son)father;</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="第六章-抽象"><a href="#第六章-抽象" class="headerlink" title="第六章 抽象"></a>第六章 抽象</h2><ol>
+<li><p>抽象的概念</p>
+</li>
+<li><p>抽象的关键字<br>  <code>abstract</code> <code>可以修饰类，可以修饰方法</code></p>
+</li>
+<li><p>抽象的用法 </p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//抽象类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> 类名</span>&#123;</span><br><span class="line">	<span class="comment">//抽象方法没有方法体</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> 方法名();	</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//当父类是抽象类的时候，子类必须重写父类里面的抽象方法</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+</li>
+</ol>
+<ol start="4">
+<li><p>final修饰符：最终的<br>  <code>修饰变量，修饰方法，修饰类</code></p>
+  <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.当修饰变量时，变量转换成常量，常量的值不能改变</span><br><span class="line">  final int a=18;//a=18;不能改变,必须给一个初始值</span><br><span class="line">2.当修饰方法时，该方法不能被重写</span><br><span class="line">3.当修饰类时，该类不能被继承</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<pre><code>---
+
+##    第七章 接口
+
+1. 接口的概念
+
+2. 接口的关键字
+   `interface`
+
+3. 接口的语法
+   `File---&gt;new---&gt;interface//创建接口`
+
+   <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> 接口名</span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+4. 接口的用法
+   `实现接口的关键字  implements`
+
+   <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> 接口名</span>&#123;</span><br><span class="line">	<span class="comment">//接口是纯抽象类</span></span><br><span class="line">	<span class="comment">//接口里面的方法都是抽象方法</span></span><br><span class="line">	<span class="function"><span class="keyword">void</span> <span class="title">setData</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Play</span> <span class="keyword">implements</span> 接口名</span>&#123;</span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setData</span><span class="params">()</span></span>&#123;</span><br><span class="line">	&#125;</span><br><span class="line"> &#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Play play=<span class="keyword">new</span> Play();</span><br><span class="line">		play.setData();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+   *注意接口可以进行多继承*
+
+   `public interface 接口名 extends 接口名，接口名{}`
+
+   一般用法
+
+   `public class 类名 extends 父类 implements 接口，接口{}`</code></pre><hr>
+<h2 id="第八章-集合框架"><a href="#第八章-集合框架" class="headerlink" title="第八章 集合框架"></a>第八章 集合框架</h2><ol>
+<li><p>ArrayList</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">用法:</span><br><span class="line">ArrayList list=<span class="keyword">new</span> ArrayList();</span><br><span class="line">list.add();<span class="comment">//添加数据</span></span><br><span class="line">list.get();<span class="comment">//获取数据</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>Map</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">用法</span><br><span class="line">Map map=<span class="keyword">new</span> HasMap();</span><br><span class="line">map.put(key,value);<span class="comment">//key不能重复</span></span><br><span class="line">map.get(key);<span class="comment">//获取key对象的value</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+</li>
+</ol>
+<ol start="3">
+<li><p>泛型</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ArrayList&lt;String&gt; list=<span class="keyword">new</span> ArrayList&gt;&lt;String&gt;();</span><br><span class="line">Map&lt;String,String&gt; map=<span class="keyword">new</span> HasMap&lt;String,String&gt;();</span><br><span class="line">ArrayList&lt;Map&lt;String,String&gt;&gt; list=<span class="keyword">new</span> ArrayList&gt;&lt;Map&lt;String,String&gt;&gt;();</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/12/Java-Oop知识点总结/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-MySQL-数据库" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -242,68 +515,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2019/10/10/MySQL-数据库/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-post-title-with-whitespace" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/10/post-title-with-whitespace/">post title with whitespace</a>
-    </h1>
-  
-
-        
-        <a href="/2019/10/10/post-title-with-whitespace/" class="archive-article-date">
-  	<time datetime="2019-10-10T02:34:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/10/post-title-with-whitespace/">展开全文 >></a>
         </p>
       
 
